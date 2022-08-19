@@ -1,0 +1,24 @@
+{
+  "name": "HISL-Bot-MD",
+  "description": "whatsapp md bot build with nodejs",
+  "repository": "https://github.com/whiteshadowofficial/HISL-WHATSAPP-BOT-MD",
+  "logo": "https://telegra.ph/file/611fcbc5979c81afbf61f.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
